@@ -21,19 +21,6 @@ body {
   list-style: none;
 }
 
-.hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 /*------------HEADER-----------*/
 
 .logo {
@@ -56,15 +43,24 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-
+.header-text:hover,
+.header-text:focus {
+  color: var(--presssed-state);
+}
 .contacts {
   color: var(--text);
   font-size: 16px;
-  font-style: normal;
+
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-
+.mail-normal {
+  font-style: normal;
+}
+.contacts:hover,
+.contacts:focus {
+  color: var(--presssed-state);
+}
 /*------------BODY-----------*/
 
 /*------------HERO-----------*/
@@ -82,6 +78,7 @@ body {
 }
 .hero-btn {
   color: var(--white-background);
+  font-family: inherit;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -89,7 +86,10 @@ body {
   background: var(--primary-brand);
   cursor: pointer;
 }
-
+.hero-btn:hover,
+.hero-btn:focus {
+  background: var(--presssed-state);
+}
 /*------------SECTION1-----------*/
 
 .advanced-header {
@@ -143,10 +143,15 @@ body {
 /*------------FOOTER-----------*/
 .footer {
   background: var(--dark);
-  color: var(--light);
 }
 .footer-logo {
   color: var(--light);
+}
+.footer-text {
+  color: var(--light);
+  font-size: 16px;
+  line-height: 1.5x; /* 150% */
+  letter-spacing: 0.02em;
 }
 /*------------PORTFOLIO-----------*/
 
@@ -158,6 +163,7 @@ body {
   letter-spacing: 0.02em;
 }
 .cards-description {
+  color: var(--text);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
