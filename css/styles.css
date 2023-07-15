@@ -150,7 +150,7 @@ body {
 .footer-text {
   color: var(--light);
   font-size: 16px;
-  line-height: 1.5x; /* 150% */
+  line-height: 1.5;
   letter-spacing: 0.02em;
 }
 /*------------PORTFOLIO-----------*/
